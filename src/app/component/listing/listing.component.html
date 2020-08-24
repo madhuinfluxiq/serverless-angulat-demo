@@ -1,0 +1,6 @@
+<p>listing works!</p>
+<lib-listing class="managementpage" *ngIf="adminList!=null && adminList.length>0" [datasource]="adminList" [skip]="users_details_header_admin_skip" [modify_header_array]="modify_header_array_admin" [apiurl]="api_url_for_admin" [deleteendpoint]="admin_deleteendpoint"
+    [updateendpoint]="admin_updateendpoint" [jwttoken]="jwttokenforadmin" [date_search_source]="admin_date_search_source" [date_search_endpoint]="admin_date_search_endpoint" [sourcedata]="admin_tablename" [statusarr]="admin_statusarray"
+    [detail_datatype]="" [detail_skip_array]="users_details_detail_admin_skip" [search_settings]="search_settings_admin" [searchendpoint]="admin_searchendpoint" [sortdata]="admin_sortdata" [datacollection]="datacollection_admin"
+    [date_search_source_count]="data_admin_count" [libdata]="admin_libdata" [limitcond]="admin_limitcond" [editroute]="admin_editroute">
+</lib-listing>

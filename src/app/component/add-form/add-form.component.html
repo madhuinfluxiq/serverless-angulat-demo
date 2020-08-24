@@ -1,0 +1,24 @@
+<p>add-form works!</p>
+<!--<lib-myfrom [fields]="regConfig" (submit)="submit($event)"></lib-myfrom>-->
+<!-- <div style="background: white;color: black;height: auto"> -->
+    <!-- <input [(ngModel)]="temtdata">
+    <input [(ngModel)]="formdata.fields[0].value">
+    <button (click)="updateformval()">Update Form and Table </button>
+    <button (click)="showfieldloader()"> show form field loader</button>
+    <button (click)="deleteformfield()"> Delete Desc Field</button>
+    <button (click)="addformfield()"> Add Pet Name Field</button>
+    <button (click)="addformfieldarray()"> Add Pet Name Field Array</button>
+    <button (click)="updateformvalmultiple()"> updateformvalmany</button>
+
+
+
+ -->
+
+    <!--form part of library-->
+    <!-- <app-header></app-header> -->
+    <mat-card class="generalcls" style="padding: 0 !important;">
+    <lib-showform *ngIf="formdata !=null" [formdata]="formdata" [formfieldrefresh]="formfieldrefresh" [formfieldrefreshdata]="formfieldrefreshdata" >
+    </lib-showform>
+   </mat-card>
+   <app-listing></app-listing>
+    <app-footer></app-footer>
